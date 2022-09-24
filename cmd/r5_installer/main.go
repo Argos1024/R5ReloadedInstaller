@@ -5,15 +5,16 @@ import (
 	"R5ReloadedInstaller/pkg/util"
 	"R5ReloadedInstaller/pkg/validation"
 	"fmt"
+	"os"
+	"path/filepath"
+	"strings"
+
 	"github.com/google/go-github/v47/github"
 	"github.com/gosuri/uiprogress"
 	"github.com/pkg/browser"
 	"github.com/rs/zerolog"
 	"github.com/tawesoft/golib/v2/dialog"
 	"golang.org/x/sync/errgroup"
-	"os"
-	"path/filepath"
-	"strings"
 )
 
 func main() {
@@ -166,7 +167,7 @@ func main() {
 			"Downloading Aim Trainer",
 			cacheDir,
 			"aimtrainer-deps",
-			"AimTrainerRequiredFiles.zip",
+			"Flowstate.-.Required.Files.zip",
 			"ColombianGuy",
 			"r5_aimtrainer",
 		)
